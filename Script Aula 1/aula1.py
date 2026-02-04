@@ -11,4 +11,4 @@ print("divisao: ", divisao)
 texto = "este é um texto \nesta é a segunda linha"
 print(texto[3:9])
 print (len(texto))
-print(texto[-1:-2])
+print(texto[-1:])
