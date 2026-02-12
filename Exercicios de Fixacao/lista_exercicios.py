@@ -203,7 +203,7 @@ nota3 = float(input('Digite a terceira nota: '))
 def calcula_media(n1, n2, n3):
     return(n1 + n2 + n3) / 3
 
-media = calcaula_media(nota1, nota2, nota3)
+media = calcula_media(nota1, nota2, nota3)
 if media >=7:
     print('Aprovado')
 else:
