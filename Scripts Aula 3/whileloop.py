@@ -5,8 +5,9 @@
 
 valor = float(input('Digite o valor do produto: R$ '))
 
-while valor > 20:
+while valor <= 20:
     valor = valor + (valor * 0.10)
-    break
+    if valor > 20:
+        break
 
 print(f'O valor final do seu produto será de R$ {valor:.2f}')
