@@ -143,7 +143,7 @@ print('E retorne o resultado.')
 
 def calculadora(numero1, numero2, operacao):
     if operacao == '+':
-        return nuemro1 + numero2
+        return numero1 + numero2
     elif operacao == '-':
         return numero1 - numero2
     elif operacao == '*':
@@ -179,10 +179,15 @@ usuario_correto = "admin"
 senha_correta = "1234"
 usuario = input('Usuario: ')
 senha = input('senha: ')
-if usuario == usuario_correto and senha == senha_correta:
-    print('Acesso permitido')
-else:
-    print('Acesso negado')
+def sistema_login(usuario, senha):
+    if usuario == usuario_correto and senha == senha_correta:
+        print('Acesso permitido')
+    else:
+        print('Acesso negado')
+
+sistema_login(usuario, senha)
+
+
 
 print(' ')
 print(f'1️⃣6️⃣ Média do aluno')
@@ -195,7 +200,10 @@ print('Média do Aluno')
 nota1 = float(input('Digite a primeira nota: '))
 nota2 = float(input('Digite a segunda nota: '))
 nota3 = float(input('Digite a terceira nota: '))
-média = (nota1+nota2+nota3)/3
+def calcula_media(n1, n2, n3):
+    return(n1 + n2 + n3) / 3
+
+media = calcaula_media(nota1, nota2, nota3)
 if media >=7:
     print('Aprovado')
 else:
@@ -276,4 +284,3 @@ elif saldo <0:
     print(f'Faltaram R$ {abs(saldo):.2f} no seu saldo.')
 else:
     print('Seu saldo está zerado.')
-    
