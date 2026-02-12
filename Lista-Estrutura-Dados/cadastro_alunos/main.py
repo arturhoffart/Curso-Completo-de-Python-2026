@@ -9,6 +9,6 @@ for i in range(3):
     aluno["nota"] = float(input("Digite a nota do aluno: "))
     alunos.append(aluno)
 
-print("\nLista de Alunos: ")A
+print("\nLista de Alunos: ")
 for aluno in alunos:
     print(aluno)
