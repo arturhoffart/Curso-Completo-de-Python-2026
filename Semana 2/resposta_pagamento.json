@@ -1,0 +1,18 @@
+{
+    "id": "pay_123",
+    "status": "approved",
+    "customer": {
+        "name": "Artur",
+        "email": "artur.hoffart@gmail.com"
+    },
+    "items": [
+        {
+            "product": "Curso IA",
+            "price": 997
+        },
+        {
+            "product": "Mentoria",
+            "price": 1997
+        }
+    ]
+}
