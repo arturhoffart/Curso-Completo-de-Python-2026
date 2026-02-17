@@ -1,8 +1,11 @@
 import json
-'''Crie um sistema que:
-Pergunte nome e idade
-Salve em arquivo JSON
-Permita adicionar múltiplos usuários'''
+'''Modifique o sistema anterior para:
+
+Ao iniciar o programa, carregar o arquivo JSON existente
+
+Não apagar os dados antigos'''
+
+
 
 users = []
 while True:
@@ -15,3 +18,10 @@ while True:
     with open("users.json", 'w') as file:
         json.dump(users, file, indent=4)
         
+try:
+    with open("users.json", 'r') as file:
+        existing_users = json.load(file)
+        users.extend(existing_users)
+except FileNotFoundError:
+    pass
+
